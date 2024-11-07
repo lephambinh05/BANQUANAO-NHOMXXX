@@ -1,0 +1,3 @@
+﻿@model WebApplication1.Models.Category
+    @Html.DropDownListFor(Model=>Model.IDCate,
+    new SelectList(Model.listcate.OrderBy(Model=>Model.NameCate),"IDCate","NameCate"),"--Select Cate")

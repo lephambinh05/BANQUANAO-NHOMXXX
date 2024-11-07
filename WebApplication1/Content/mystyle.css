@@ -1,0 +1,42 @@
+﻿body {
+    margin:0;
+}
+#div-top{
+    height:50px;
+    width:100%;
+    background-color:aquamarine;
+}
+#div-main{
+    display:flex;
+    flex-direction:row;
+    margin-bottom:20px;
+    width:auto;
+}
+#div-left{
+    width:auto;
+    height:auto;
+    font-family:Arial;
+    font-size:small;
+}
+#div-left h3{
+    text-align:center;
+}
+#div-containt{
+    width:auto;
+    height:auto;
+    background-color:antiquewhite;
+}
+#div-footer{
+    height:50px;
+    width:100%;
+    background-color:burlywood;
+    bottom:0px;
+
+  
+
+}
+#div-footer p{
+    text-align:center;
+    left:50%;
+    padding-top:15px;
+}

@@ -1,0 +1,25 @@
+﻿@model IEnumerable<WebApplication1.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>DANH MỤC SẢN PHẨM</h2>
+
+<div class="container">
+    <div class="row">
+        @foreach (var pro in Model)
+        {
+            <div class="col-sm-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card-pro">
+                    <p>@Html.DisplayFor(model => pro.ProductID)</p>
+                    <img src="@Url.Content(pro.ImagePro)" height="150" width="150" />
+                    <p>@Html.DisplayFor(model => pro.NamePro)</p>
+                    <p>@Html.DisplayFor(model => pro.Price)</p>
+                    <p><input type="submit" value="Buy" /></p>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
